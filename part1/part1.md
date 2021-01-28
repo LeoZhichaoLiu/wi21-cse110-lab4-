@@ -39,35 +39,35 @@
 
 ## Basic Operators & Type Conversion 
 
-14. A:
+14. A: '32'
     
-    B:
+    B:  1
     
-    C:
+    C:  3
     
-    D:
+    D:  '3null'
     
-    E:
+    E:  4
     
-    F:
+    F:  0
     
-    G:
+    G:  '3undefined'
     
-    H:
+    H: NaN
 
-15. A:
+15. A: true
 
-    B:
+    B: false
     
-    C:
+    C: true   Reason: == will only compare equality of values regardless of types. 2 and '2' have same value 2.
     
-    D:
+    D: false  Reason: === will check both value and type. Since 2 and '2' have different type, it will return false. 
     
-    E:
+    E: false
     
-    F:
+    F: true
 
-16.
+16. For ==, it will only compare variables by their values, ignoring the types. For example, if we compare int 2 and string '2', using == will return true. However, for ===, it will also check the equality of types. In the above exmple, it will return false using === for 2 and '2', since their types are different. 
 
 ## Conditionals
 
