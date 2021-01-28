@@ -107,7 +107,7 @@
 
 ## Functions
 
-19. 
+19. It will return [6, 8, 10]. When calling modifyArray function, it will iterate each element of input array [1, 2, 3], and modify each element, which is then pushed into newArray to return. For each element, it will call function doSomething (element, function(x)), in which function(x) is defined by returning x * 2. In doSomething function, it return function (element + 2), which will finally be (element + 2) * 2. Thus, for each element of input array, the doSomething will change it to (1+2) * 2, (2+2) * 2, and (3+2) * 2 and push into new Array. So, the final return array should be [6, 8, 10].
 
 20. 
 
