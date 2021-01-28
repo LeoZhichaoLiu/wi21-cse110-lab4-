@@ -40,42 +40,70 @@
 ## Basic Operators & Type Conversion 
 
 14. A: '32'
+
+       Reason: 2 is converted to '2', and '3' + '2' = '32'
     
     B:  1
     
+       Reason: Since there is no substraction between string, '3' is converted to 3, and 3 - 2 = 1.
+    
     C:  3
+    
+       Reason: null is converted to 0, and 3 + 0 = 3.
     
     D:  '3null'
     
+       Reason: null is converted to 'null', and '3' + 'null' = '3null'.
+    
     E:  4
     
+       Reason: true is converted to 1, and 1 + 3 = 4. 
+    
     F:  0
+       
+       Reason: null is converted to 0, and false is converted to 0, and 0 + 0 = 0.
     
     G:  '3undefined'
     
+       Reason: undefined is converted to 'undefined', and "3" + 'undefined' = '3undefined'.
+    
     H: NaN
+    
+       Reason: there is no substraction between either string or undefined, so NaN (undefiend) is printed. 
 
 15. A: true
 
+       Reason: For comparsion between different types, JS will convert '2' to number 2, and return true since 2 > 1.
+
     B: false
     
-    C: true   Reason: == will only compare equality of values regardless of types. 2 and '2' have same value 2.
+       Reason: For comparsion between string, JS will compare each char one by one. Since '2' is larger than '1', which is the first char of '12', it will return false. 
     
-    D: false  Reason: === will check both value and type. Since 2 and '2' have different type, it will return false. 
+    C: true   
+       
+       Reason: == will only compare equality of values regardless of types. 2 and '2' have same value 2.
+    
+    D: false  
+    
+       Reason: === will check both value and type. Since 2 and '2' have different type, it will return false. 
     
     E: false
+       
+       Reason: true will be converted to 1. And 1 is not equal to 2 in integer. 
     
     F: true
+    
+       Reason: Boolean (2) will return true, since 2 is not 0. Since true and true are same type with same value, it will return true. 
 
 16. For ==, it will only compare variables by their values, ignoring the types. For example, if we compare int 2 and string '2', using == will return true. However, for ===, it will also check the equality of types. In the above exmple, it will return false using === for 2 and '2', since their types are different. 
 
 ## Conditionals
 
-17.
+17. 'How are you?' is printed. The reason is that true will converted to 1 for comparsion, and 2 != 1 return false. For the next condition, 2 is not 0, so the condition is true, and the system will print the words "How are you?". 
 
 ## Loops
 
-18.
+18. See File question18.js
 
 ## Functions
 
