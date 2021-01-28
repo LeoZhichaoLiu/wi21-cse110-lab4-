@@ -109,8 +109,8 @@
 
 19. It will return [6, 8, 10]. When calling modifyArray function, it will iterate each element of input array [1, 2, 3], and modify each element, which is then pushed into newArray to return. For each element, it will call function doSomething (element, function(x)), in which function(x) is defined by returning x * 2. In doSomething function, it return function (element + 2), which will finally be (element + 2) * 2. Thus, for each element of input array, the doSomething will change it to (1+2) * 2, (2+2) * 2, and (3+2) * 2 and push into new Array. So, the final return array should be [6, 8, 10].
 
-20. 
+20. See part1-question20.js.
 
-21.
+21. The output should be: 1 4 3 2. 1, 4, and 3 are printed immdiately. 2 is printed after 1000ns. The reason is that console.log() will print 1 and 4 firstly. And setTimeout function will print 3 and 2 later. Since the setTimeout function for printing 3 has delay of 0, so it will print just immdiately after 1 and 4. Since the delay for printing 2 is 1000, it will print 2 1000ns after. 
 
 
