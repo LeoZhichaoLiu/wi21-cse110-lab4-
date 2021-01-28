@@ -27,13 +27,45 @@
 
 ## Data Type
 
-13. 
+13. A: Student.name  or   Student['name']
+
+    B: Student['Grad Year']
+    
+    C: Student.greeting.call();
+    
+    D: Student['Favoriate Teacher'].name
+    
+    E: Student.courseLoad[0]
 
 ## Basic Operators & Type Conversion 
 
-14. 
+14. A:
+    
+    B:
+    
+    C:
+    
+    D:
+    
+    E:
+    
+    F:
+    
+    G:
+    
+    H:
 
-15. 
+15. A:
+
+    B:
+    
+    C:
+    
+    D:
+    
+    E:
+    
+    F:
 
 16.
 
