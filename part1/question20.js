@@ -1,3 +1,8 @@
-let d = new Data();
-let time = d.toLocaleTimeString();
-console.log(time);
+function display () {
+  let d = new Date();
+  let time = d.toLocaleTimeString();
+  console.log(time);
+  setTimeout (display, 1000);
+}
+
+display();
